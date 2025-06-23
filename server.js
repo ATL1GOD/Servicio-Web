@@ -17,10 +17,10 @@ app.use(bodyParser.json());
 
 // Conexión a MySQL
 const db = mysql.createConnection({
-  host: '34.136.247.46',
   user: 'root',
   password: 'Atl1God$',
-  database: 'cineboletos'
+  database: 'cineboletos',
+  socketPath: '/cloudsql/white-option-462703-s8:us-central1:cine' 
 });
 
 db.connect((err) => {
